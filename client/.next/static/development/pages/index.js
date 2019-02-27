@@ -18,7 +18,7 @@ var _jsxFileName = "/Users/patrickmclennan/Documents/imdb_crawler/client/compone
 var Header = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].header.withConfig({
   displayName: "Heading__Header",
   componentId: "sc-12dtgn7-0"
-})(["border-bottom:1px solid black;margin:0 5vw;box-shadow:3px 3px 20px black;margin:2vh 5vw;padding:2vh;"]);
+})(["border-bottom:1px solid black;box-shadow:3px 3px 20px black;margin-bottom:2vh;padding:2vh;"]);
 var H1 = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].h1.withConfig({
   displayName: "Heading__H1",
   componentId: "sc-12dtgn7-1"
@@ -32,19 +32,19 @@ var Heading = function Heading(props) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Header, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 36
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(H1, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 37
     },
     __self: this
   }, "Random Movie Picker"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(H2, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 38
     },
     __self: this
   }, "Here are IMDB's top 250 movies to help with your indecision"));
@@ -132,7 +132,7 @@ var _jsxFileName = "/Users/patrickmclennan/Documents/imdb_crawler/client/compone
 var Card = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].figure.withConfig({
   displayName: "Movie__Card",
   componentId: "ekuqby-0"
-})(["display:inline-flex;margin:1.5vh;padding:1.5vh;border:1px solid black;transition:all 0.3s ease-in-out;overflow:hidden;& img{height:125px;width:auto;margin-right:1.5vh;}& figcaption{display:flex;flex-direction:column;justify-content:space-evenly;align-items:center;}& h3{font-size:2rem;text-transform:uppercase;letter-spacing:0.15rem;}& h4{font-size:1.75rem;font-weight:100;}& a{border:1px solid black;padding:1rem 2rem;transform:translateY(300%);transition:all 0.3s ease-out;& span{font-style:italic;}}&:hover{transform:scale(1.1);& a{transform:translateY(0);}}"]);
+})(["display:inline-flex;margin:1.5vh 0.75vh;padding:1.5vh;border:1px solid black;transition:all 0.3s ease-in-out;overflow:hidden;background:#e3e3e3;& img{height:125px;width:auto;margin-right:1.5vh;}& figcaption{display:flex;flex-direction:column;justify-content:space-evenly;align-items:center;}& h3{font-size:2rem;font-weight:100;text-transform:uppercase;letter-spacing:0.15rem;}& h4{font-size:1.75rem;}& a{border:1px solid black;padding:1rem 2rem;transform:translateY(300%);transition:all 0.3s ease-out;& span{font-style:italic;}}&:hover{transform:scale(1.1);& a{transform:translateY(0);}}"]);
 
 var Movie = function Movie(_ref) {
   var _ref$movie = _ref.movie,
@@ -197,10 +197,6 @@ var Movie = function Movie(_ref) {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Movie);
-{
-  /* <img src="https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UY67_CR0,0,45,67_AL_.jpg" width="45" height="67" alt="The Shawshank Redemption">
-  <img alt="The Shawshank Redemption Poster" title="The Shawshank Redemption Poster" src="https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX182_CR0,0,182,268_AL_.jpg"></img> */
-}
 
 /***/ }),
 
@@ -250,6 +246,132 @@ var MovieGrid = function MovieGrid(_ref) {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (MovieGrid);
+
+/***/ }),
+
+/***/ "./components/Random.js":
+/*!******************************!*\
+  !*** ./components/Random.js ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_values__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/values */ "./node_modules/@babel/runtime-corejs2/core-js/object/values.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_values__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_values__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.browser.esm.js");
+/* harmony import */ var _components_Movie__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/Movie */ "./components/Movie.js");
+
+
+
+
+
+
+
+
+var _jsxFileName = "/Users/patrickmclennan/Documents/imdb_crawler/client/components/Random.js";
+
+
+
+var Button = styled_components__WEBPACK_IMPORTED_MODULE_9__["default"].button.withConfig({
+  displayName: "Random__Button",
+  componentId: "sc-1qxqgkq-0"
+})(["position:fixed;bottom:5vh;right:5vh;font-size:8rem;border-radius:50%;padding:3rem 4rem;cursor:pointer;border:1px solid black;"]);
+var Modal = styled_components__WEBPACK_IMPORTED_MODULE_9__["default"].div.withConfig({
+  displayName: "Random__Modal",
+  componentId: "sc-1qxqgkq-1"
+})(["position:fixed;top:0;left:0;height:100%;width:100%;background:rgba(0,0,0,0.85);display:flex;justify-content:center;align-items:center;"]);
+
+var Random =
+/*#__PURE__*/
+function (_Component) {
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__["default"])(Random, _Component);
+
+  function Random() {
+    var _getPrototypeOf2;
+
+    var _this;
+
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_1__["default"])(this, Random);
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_3__["default"])(this, (_getPrototypeOf2 = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_4__["default"])(Random)).call.apply(_getPrototypeOf2, [this].concat(args)));
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "state", {
+      show: false,
+      movie: ''
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "getRandom", function () {
+      var movies = [_babel_runtime_corejs2_core_js_object_values__WEBPACK_IMPORTED_MODULE_0___default()(_this.props.movies)][0];
+      var randomNum = Math.floor(Math.random() * movies.length);
+
+      _this.setState({
+        show: true,
+        movie: movies[randomNum]
+      });
+
+      console.log(_this.state);
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "closeRandom", function () {
+      _this.setState({
+        show: false,
+        movie: ''
+      });
+    });
+
+    return _this;
+  }
+
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_2__["default"])(Random, [{
+    key: "render",
+    value: function render() {
+      var _this$state = this.state,
+          show = _this$state.show,
+          movie = _this$state.movie;
+      return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_8___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(Button, {
+        onClick: this.getRandom,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 55
+        },
+        __self: this
+      }, "?"), show && react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(Modal, {
+        onClick: this.closeRandom,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 57
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_components_Movie__WEBPACK_IMPORTED_MODULE_10__["default"], {
+        movie: movie,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 58
+        },
+        __self: this
+      })));
+    }
+  }]);
+
+  return Random;
+}(react__WEBPACK_IMPORTED_MODULE_8__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (Random);
 
 /***/ }),
 
@@ -551,6 +673,36 @@ function _createClass(Constructor, protoProps, staticProps) {
   if (protoProps) _defineProperties(Constructor.prototype, protoProps);
   if (staticProps) _defineProperties(Constructor, staticProps);
   return Constructor;
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js":
+/*!***************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js ***!
+  \***************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _defineProperty; });
+/* harmony import */ var _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+/* harmony import */ var _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0__);
+
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default()(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
 }
 
 /***/ }),
@@ -9867,6 +10019,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Meta__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/Meta */ "./components/Meta.js");
 /* harmony import */ var _components_Heading__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/Heading */ "./components/Heading.js");
 /* harmony import */ var _components_MovieGrid__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/MovieGrid */ "./components/MovieGrid.js");
+/* harmony import */ var _components_Random__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/Random */ "./components/Random.js");
 
 
 
@@ -9888,32 +10041,40 @@ function _templateObject() {
 
 
 
+
 var GlobalStyle = Object(styled_components__WEBPACK_IMPORTED_MODULE_4__["createGlobalStyle"])(_templateObject());
 
 var Home = function Home(props) {
   return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_3___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_components_Meta__WEBPACK_IMPORTED_MODULE_6__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 33
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(GlobalStyle, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 34
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_components_Heading__WEBPACK_IMPORTED_MODULE_7__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 35
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_components_MovieGrid__WEBPACK_IMPORTED_MODULE_8__["default"], {
     movies: props,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 36
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_components_Random__WEBPACK_IMPORTED_MODULE_9__["default"], {
+    movies: props,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37
     },
     __self: this
   }));
@@ -9960,7 +10121,7 @@ function () {
 
 /***/ }),
 
-/***/ 2:
+/***/ 1:
 /*!**************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fpatrickmclennan%2FDocuments%2Fimdb_crawler%2Fclient%2Fpages%2Findex.js ***!
   \**************************************************************************************************************************************************/
@@ -9983,5 +10144,5 @@ module.exports = dll_3681e7fd756237ce51c6;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]));;
+},[[1,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=index.js.map

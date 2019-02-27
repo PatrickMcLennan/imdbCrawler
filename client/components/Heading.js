@@ -2,9 +2,8 @@ import styled from 'styled-components';
 
 const Header = styled.header`
   border-bottom: 1px solid black;
-  margin: 0 5vw;
   box-shadow: 3px 3px 20px black;
-  margin: 2vh 5vw;
+  margin-bottom: 2vh;
   padding: 2vh;
 `;
 

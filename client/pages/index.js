@@ -3,6 +3,7 @@ import 'isomorphic-fetch';
 import Meta from '../components/Meta';
 import Heading from '../components/Heading';
 import MovieGrid from '../components/MovieGrid';
+import Random from '../components/Random';
 
 const GlobalStyle = createGlobalStyle`
   *,
@@ -33,6 +34,7 @@ const Home = props => (
     <GlobalStyle />
     <Heading />
     <MovieGrid movies={props} />
+    <Random movies={props} />
   </>
 );
 

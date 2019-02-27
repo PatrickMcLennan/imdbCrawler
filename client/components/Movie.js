@@ -2,16 +2,16 @@ import styled from 'styled-components';
 
 const Card = styled.figure`
   display: inline-flex;
-  margin: 1.5vh;
+  margin: 1.5vh 0.75vh;
   padding: 1.5vh;
   border: 1px solid black;
   transition: all 0.3s ease-in-out;
   overflow: hidden;
+  background: #e3e3e3;
 
   & img {
     height: 125px;
     width: auto;
-
     margin-right: 1.5vh;
   }
 
@@ -24,13 +24,13 @@ const Card = styled.figure`
 
   & h3 {
     font-size: 2rem;
+    font-weight: 100;
     text-transform: uppercase;
     letter-spacing: 0.15rem;
   }
 
   & h4 {
     font-size: 1.75rem;
-    font-weight: 100;
   }
 
   & a {
@@ -68,9 +68,3 @@ const Movie = ({ movie: { title, link, picture, release, rating } }) => (
 );
 
 export default Movie;
-
-{
-  /* <img src="https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UY67_CR0,0,45,67_AL_.jpg" width="45" height="67" alt="The Shawshank Redemption">
-
-<img alt="The Shawshank Redemption Poster" title="The Shawshank Redemption Poster" src="https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX182_CR0,0,182,268_AL_.jpg"></img> */
-}

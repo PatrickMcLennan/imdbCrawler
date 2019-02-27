@@ -16,7 +16,6 @@ rp(CALL_URL)
   .then(html => {
     const allMovies = [$('tr', html)];
     const moviesArr = Object.values(allMovies[0]);
-
     moviesArr.forEach(film => {
       const movie = {
         title: $('.titleColumn > a', film).text(),
