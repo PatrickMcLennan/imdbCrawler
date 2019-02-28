@@ -18,7 +18,7 @@ var _jsxFileName = "/Users/patrickmclennan/Documents/imdb_crawler/client/compone
 var Header = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].header.withConfig({
   displayName: "Heading__Header",
   componentId: "sc-12dtgn7-0"
-})(["border-bottom:1px solid black;box-shadow:3px 3px 20px black;margin-bottom:2vh;padding:2vh;"]);
+})(["box-shadow:3px 3px 4rem black;margin-bottom:2vh;padding:2vh;"]);
 var H1 = styled_components__WEBPACK_IMPORTED_MODULE_1__["default"].h1.withConfig({
   displayName: "Heading__H1",
   componentId: "sc-12dtgn7-1"
@@ -32,19 +32,19 @@ var Heading = function Heading(props) {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Header, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 35
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(H1, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 36
     },
     __self: this
   }, "Random Movie Picker"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(H2, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 37
     },
     __self: this
   }, "Here are IMDB's top 250 movies to help with your indecision"));
@@ -223,14 +223,14 @@ var _jsxFileName = "/Users/patrickmclennan/Documents/imdb_crawler/client/compone
 var Grid = styled_components__WEBPACK_IMPORTED_MODULE_2__["default"].div.withConfig({
   displayName: "MovieGrid__Grid",
   componentId: "sc-3l28hn-0"
-})(["margin:2vh 2.5vw;"]);
+})(["margin:2vh 2.5vw;display:flex;flex-wrap:wrap;justify-content:center;"]);
 
 var MovieGrid = function MovieGrid(_ref) {
   var movies = _ref.movies;
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Grid, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 12
     },
     __self: this
   }, [_babel_runtime_corejs2_core_js_object_values__WEBPACK_IMPORTED_MODULE_0___default()(movies)][0].map(function (movie) {
@@ -238,7 +238,7 @@ var MovieGrid = function MovieGrid(_ref) {
       movie: movie,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 11
+        lineNumber: 14
       },
       __self: this
     });

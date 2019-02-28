@@ -3,6 +3,9 @@ import Movie from './Movie';
 
 const Grid = styled.div`
   margin: 2vh 2.5vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 `;
 
 const MovieGrid = ({ movies }) => (
